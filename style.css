@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap');
+* {
+    text-decoration: none;
+}
+
+body,
+html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    height: 100%;
+}
+
+
+/* contato */
+
+.enviar {
+    margin-top: -70px
+}
+
+.contact {
+    font-size: 16px;
+    margin-right: 170px;
+    letter-spacing: 1px;
+}
+
+#container {
+    text-align: right;
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #495057;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+input {
+    border: none;
+    height: 30px;
+    width: 40%;
+    font-size: 15px;
+    margin-left: 20px;
+    background-color: #fff;
+    padding-left: 10px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+input.submit {
+    color: #fff;
+    background-color: #023f88;
+    margin-right: 400px;
+    margin-bottom: 0px;
+    height: 40px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+textarea {
+    border-radius: 6px;
+    width: 35%;
+    height: 170px;
+    clear: both;
+    float: left;
+    margin-top: -257px;
+    margin-left: 40px;
+}
+
+
+/* mapa Responsivo */
+
+.mapa_responsivo {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.mapa_responsivo iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* Menu Responsivo */
+
+nav {
+    background: #023f88;
+    height: 0px;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+    margin-right: 40px;
+    margin-top: -18px;
+    letter-spacing: 2px;
+    float: right;
+    padding: 12px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.login a {
+    margin-left: 200px;
+}
+
+a.active,
+a:hover {
+    background: #023f88;
+    transition: .5s;
+}
+
+.checkbtn {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .checkbtn {
+        background-image: url(img/list.png);
+        background-repeat: no-repeat;
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        background: #023f88;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        letter-spacing: 2.5px;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 20px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked~ul {
+        left: -10px;
+    }
+}
+
+
+/* Logo */
+
+.icon {
+    width: 150px;
+    float: left;
+    padding: 22px;
+}
+
+
+/* Conteudos da página inicial */
+
+.conteudo {
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.caixa1,
+.conteudo_titulo span.titulo1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 60px;
+}
+
+.caixa1 span.titulo1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Inter';
+    font-size: 60px;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.mob {
+    text-decoration: underline;
+    text-decoration-color: #023f88;
+}
+
+.ilys {
+    text-decoration: underline;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #023f88;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #023f88;
+}
+
+
+/* Efeito parallax */
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4 {
+    height: 100%;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.caixa1 {
+    background-image: url(img/img3.png);
+}
+
+.caixa2 {
+    background-image: url(img/light-space-g325d01e38_1280.jpg);
+}
+
+.caixa3 {
+    background-image: url(img/living-room-g1ef3f9420_1280.jpg);
+}
+
+.caixa4 {
+    background-image: url(img/imgcasa.jpg);
+}
+
+.conteudo_titulo {
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.sub {
+    font-size: 17px;
+    color: white;
+    font-weight: none;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.letra {
+    text-transform: uppercase;
+}
+
+.conteudo_titulo span.titulo {
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: #fff;
+    background-color: #023f88;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.caixa4,
+.conteudo_titulo a {
+    text-decoration: none;
+}
+
+
+/* Veja mais */
+
+.vejamais a {
+    color: #023f88;
+}
+
+.vejamais a:hover {
+    background: #023f88;
+    border-radius: 3px;
+    color: white;
+    padding: 6px;
+}
+
+
+/* Duvidas frequentes*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+/* Rodapé */
+
+.rodape_prin {
+    background-color: #023f88;
+    clear: both;
+    height: 100px;
+    margin-top: -15px;
+    color: rgb(250, 255, 250);
+    font-size: 15px;
+    font-family: "arial", sans-serif;
+}
+
+.rodape_prin span {
+    float: left;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 15px;
+    line-height: 60px;
+    /* Mesma altura do rodapé */
+}
+
+.icones_sociais ul {
+    display: inline-block;
+    height: inherit;
+    float: right;
+    width: 75%;
+    margin: 0;
+    line-height: 60px;
+}
+
+.icones_sociais li {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    margin-top: 17px;
+    width: 60px;
+    height: inherit;
+}
+
+span.contatos {
+    text-align: right;
+    float: right;
+    padding-right: 20px;
+    height: 60px;
+}
